@@ -1,0 +1,43 @@
+body{
+    background-image: url("../imgs/brickwall.jpeg");
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif; 
+    color: #777777;
+    line-height: 1.5;  
+}
+
+.navbar-brand{
+    background: #4aaaa5;
+    color: white;
+    font-size:30px; 
+}
+
+h1{
+    color: #4aaaa5;
+    font-size: 30px;
+}
+  
+footer{ 
+padding:5px;
+background-color: #666666;
+text-align: center;
+font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+color: #ffffff;
+border-top: 3px solid #4aaaa5;
+left:0;
+bottom:0;
+width:100%;
+position:fixed;
+
+}
+.caption{
+    background-color: #4aaaa5;
+}
+h3{
+    color: #ffffff;
+    text-align: center;
+}
+.page-header{
+    border-bottom: 1px solid #777777;
+    color: #4aaaa5;
+}
+

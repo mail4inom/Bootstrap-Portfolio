@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <link rel="shortcut icon" href="assets/imgs/favicon.png" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My First Website</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-default" style="border-bottom: 2px solid #666666;">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+          aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">&#9802; Inom Ibragimov</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="#">About &#9996;</a>
+          </li>
+          <li>
+            <a href="portfolio.html">Portfolio &#x263A;</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact &#9993;</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-xs-12 col-md-9 ">
+        <div class="content-box well">
+          <div class="page-header">
+            <h1>
+              <a href="" class="typewrite" data-period="2000" data-type='[ "Hi, Im Inom.", "I am a web Developer.", "I Love To Code.", "I Love to Develop.","I Love My Job." ]' style="color: #4aaaa5;">
+                <span class="wrap"></span>
+              </a>
+            </h1>
+          </div>
+          <div class="col-xs-12 col-md-3">
+            <a href="#" class="thumbnail">
+              <img src="assets/imgs/myimage.jpg" alt="My Image">
+            </a>
+          </div>
+
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aliquid atque laborum voluptatum cumque! Inventore
+            sapiente temporibus obcaecati accusamus aliquam omnis odio, harum cupiditate esse adipisci alias? Quos, ea ullam?
+          </p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat aliquam quae delectus incidunt optio sed quos
+            esse tenetur veritatis suscipit? Voluptatem officiis laborum itaque, accusantium praesentium debitis nobis dolor
+            iste? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid harum maxime amet, ipsa vel obcaecati</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aliquid atque laborum voluptatum cumque! Inventore
+            sapiente temporibus obcaecati accusamus aliquam omnis odio, harum cupiditate esse adipisci alias? Quos, ea ullam?
+          </p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat aliquam quae delectus incidunt optio sed quos
+            esse tenetur veritatis suscipit? Voluptatem officiis laborum itaque, accusantium praesentium debitis nobis dolor
+            iste? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid harum maxime amet, ipsa vel obcaecati</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam delectus eos repellendus expedita tempora sint
+            doloremque perferendis aliquid dolorum omnis commodi labore quod officia exercitationem, corporis eveniet quidem
+            ex deserunt?</p>
+        </div>
+      </div>
+      <div class="col-md-3 well hidden-xs">
+          <div class="list-group">
+              <div class="page-header">
+                  <h1>
+                      <a href="" class="typewrite" data-period="2000" data-type='[ "Connect with Me.", "On LinkedIn.", "On Stackoverflow.", "On GitHub."]' style="color: #4aaaa5;">
+                        <span class="wrap"></span>
+                      </a>
+                    </h1>
+              </div>
+              <a href="https://www.linkedin.com/in/inomzhon-ibragimov-0091b2156/">
+                  <img src="assets/imgs/linkedIn.png" alt="My Image" width="73px" height="73px">
+              </a>
+              <a href="https://stackoverflow.com/users/9298520/inomzhon-ibragimov?tab=profile">
+                  <img src="assets/imgs/stachOverflow.jpeg" alt="My Image" width="80px" height="80px">
+              </a>
+              <a href="https://github.com/mail4inom">
+                  <img src="assets/imgs/Github.png" alt="My Image" width="75px" height="75px">
+              </a>
+          </div>
+      </div>
+  </div>
+  </div>
+
+  <footer>
+    &copy;Rutgers Coding Bootcamp 2018
+  </footer>
+  <script>var TxtType = function (el, toRotate, period) {
+      this.toRotate = toRotate;
+      this.el = el;
+      this.loopNum = 0;
+      this.period = parseInt(period, 10) || 2000;
+      this.txt = '';
+      this.tick();
+      this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function () {
+      var i = this.loopNum % this.toRotate.length;
+      var fullTxt = this.toRotate[i];
+
+      if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+      } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+      }
+
+      this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+      var that = this;
+      var delta = 200 - Math.random() * 100;
+
+      if (this.isDeleting) { delta /= 2; }
+
+      if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+      } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+      }
+
+      setTimeout(function () {
+        that.tick();
+      }, delta);
+    };
+
+    window.onload = function () {
+      var elements = document.getElementsByClassName('typewrite');
+      for (var i = 0; i < elements.length; i++) {
+        var toRotate = elements[i].getAttribute('data-type');
+        var period = elements[i].getAttribute('data-period');
+        if (toRotate) {
+          new TxtType(elements[i], JSON.parse(toRotate), period);
+        }
+      }
+      // INJECT CSS
+      var css = document.createElement("style");
+      css.type = "text/css";
+      css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+      document.body.appendChild(css);
+    };</script>
+</body>
+
+</html>
