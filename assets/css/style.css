@@ -41,4 +41,9 @@ h3{
     border-bottom: 1px solid #777777;
     color: #4aaaa5;
 }
-
+#crystals{
+    height: 150px;
+}
+#trivia{
+    height: 175px;
+}
