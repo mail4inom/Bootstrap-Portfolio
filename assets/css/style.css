@@ -47,6 +47,7 @@ h3{
 #trivia, #liri{
     height: 175px;
 }
-#giphy{
+#giphy, #bamazon{
     height: 150px;
+    width: 100%;
 }
